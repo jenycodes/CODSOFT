@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova - Digital Solutions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <svg viewBox="0 0 24 24" class="logo-icon" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+                <span>Nova</span>
+            </div>
+            <div class="nav-links">
+                <a href="#solutions">Solutions</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+                <button class="cta-button">Get Started</button>
+            </div>
+            <button class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Build the Future Today<span class="gradient-text"> With Nova</span></h1>
+                    <p>Transform your digital presence with cutting-edge solutions that drive innovation and growth.</p>
+                    <div class="hero-buttons">
+                        <button class="primary-button">Start Building</button>
+                        <button class="ghost-button">Learn More</button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="gradient-sphere"></div>
+                    <div class="grid-pattern"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="solutions" class="solutions">
+        <div class="container">
+            <h2>Our Solutions</h2>
+            <div class="cards-grid">
+                
+                <!-- Existing Solutions -->
+                <div class="card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Lightning Fast</h3>
+                    <p>Optimized performance for seamless experiences</p>
+                </div>
+    
+                <div class="card">
+                    <div class="card-icon">🛡️</div>
+                    <h3>Secure</h3>
+                    <p>Enterprise-grade security for your peace of mind</p>
+                </div>
+    
+                <div class="card">
+                    <div class="card-icon">📊</div>
+                    <h3>Analytics</h3>
+                    <p>Deep insights to drive better decisions</p>
+                </div>
+    
+                <!-- New Solutions -->
+                <div class="card">
+                    <div class="card-icon">🤖</div>
+                    <h3>AI Integration</h3>
+                    <p>Integrating AI to automate tasks and boost efficiency</p>
+                </div>
+    
+                <div class="card">
+                    <div class="card-icon">☁️</div>
+                    <h3>Cloud Hosting</h3>
+                    <p>Reliable and scalable hosting solutions for your business</p>
+                </div>
+    
+                <div class="card">
+                    <div class="card-icon">🖥️</div>
+                    <h3>Custom Development</h3>
+                    <p>Tailored development to meet your business's unique needs</p>
+                </div>
+    
+                <div class="card">
+                    <div class="card-icon">🔍</div>
+                    <h3>SEO Optimization</h3>
+                    <p>Drive traffic and improve your digital presence</p>
+                </div>
+    
+                <div class="card">
+                    <div class="card-icon">🎨</div>
+                    <h3>UI/UX Design</h3>
+                    <p>Intuitive and engaging designs for a better user experience</p>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Nova is a visionary company dedicated to revolutionizing the way businesses approach their digital transformation journeys. Our team of experts leverages cutting-edge technology and industry best practices to deliver tailor-made solutions for every client.</p>
+            <p>From enhancing online security to providing powerful analytics, we are your trusted partner in achieving sustainable growth in the digital age.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+
+                <button type="submit" class="primary-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <svg viewBox="0 0 24 24" class="logo-icon" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                        <span>Nova</span>
+                    </div>
+                    <p>Building the future of digital experiences</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#privacy">Privacy</a>
+                    <a href="#terms">Terms</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Nova. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
